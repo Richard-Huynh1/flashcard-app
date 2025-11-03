@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <button onClick={() => setViewFlashCards((prevValue) => !prevValue)}>
-        {viewFlashCards ? "Add flash cards" : "View flash cards"}
+        {viewFlashCards ? "Add flashcards" : "View flashcards"}
       </button>
       {!viewFlashCards && <AddFlashCard onAdd={addFlashCard} />}
       {viewFlashCards && <ViewFlashCard flashcards={flashcards} />}
